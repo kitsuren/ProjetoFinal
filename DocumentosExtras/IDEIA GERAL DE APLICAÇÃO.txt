@@ -1,0 +1,45 @@
+sistema de chaves academia:
+
+tipos de chave:
+- chave mestra (abre tudo - adm/gerente)
+- chave da academia (apenas adm/gerente)
+- chave das salas (instrutores)
+- chave armários (alunos)
+
+ambientes/salas:
+- academia (ambiente geral - apenas chave mestra e chave academia)
+- salas comunitárias (sala pesos / sala cardio)
+- salas exclusivas (sala aula1 / sala aula2)
+- armários (todos podem ter acesso)
+
+---------
+
+IDEIA SISTEMA:
+
+- TELA HOME: ambiente geral, informações sobre aulas, horários, amenidades
+- LOGIN -> define acesso do usuário
+- IF ADM/GERENTE: Dashboard completo para gerenciamento de salas/chaves/ambientes/cadastros
+- IF INSTRUTOR: Dashboard Instrutor - cadastro de alunos (apenas), sistema de empréstimo de chaves, sistema de reserva de salas, criação de treino pessoal para cliente
+- IF ALUNO: Dashboard cliente - visualização de horários/salas/chaves disponíveis, acesso ao treino pessoal, solicitação de reserva/empréstimo de armários.
+
+- LEMBRAR:
+-- ADM TEM TUDO QUE INSTRUTOR E ALUNO TEM
+-- INSTRUTOR TEM TUDO QUE ALUNO TEM
+-- ALUNO TEM APENAS ACESSO A COISAS PARA ALUNOS (acesso mínimo)
+
+--------
+
+PRECISA TER:
+
+- HOME (APENAS ESTÉTICA - FILLER)
+- É MEMBRO DA NOSSA ACADEMIA? ACESSE SUA CONTA! (LOGIN - PÁGINA ESPECÍFICA)
+- DASHBOARD (DIFERENTE DEPENDENDO DE NÍVEL DE PERMISSÃO -> ADM, INSTRUTOR, ALUNO)
+- AULAS (CADASTRAR/LISTAR/SOLICITAR/MATRICULAR)
+- SALAS (CADASTRAR/LISTAR/SOLICITAR/RESERVAR/EMPRESTAR/DEVOLVER)
+- ARMÁRIOS (CADASTRAR/SOLICITAR/EMPRESTAR)
+- CHAVES (CADASTRAR/LISTAR/SOLICITAR/EMPRESTAR/DEVOLVER)
+- USUÁRIO (CADASTRAR/LISTAR/DETERMINAR TIPO DE USUÁRIO)
+
+
+
+
