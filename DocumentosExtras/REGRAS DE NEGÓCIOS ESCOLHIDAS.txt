@@ -1,0 +1,11 @@
+REGRAS DE NEGÓCIOS ESCOLHIDAS:
+
+1. Uma cópia de chave "Emprestada" não pode ser atribuída a outra pessoa até que seja dada a baixa no sistema.
+3. O histórico de movimentações deve ser preservado mesmo após a devolução da chave.
+5. Uma pessoa pode solicitar a renovação do prazo de entrega via sistema, desde que a chave não esteja reservada para outro usuário ou o prazo original não tenha expirado há mais de X horas.
+9. Ao solicitar a chave de uma sala interna, o sistema deve verificar se o usuário já possui (ou deve retirar) a chave do portão de acesso principal do setor.
+11. Registros de empréstimos finalizados não podem ser excluídos, apenas arquivados, para garantir a auditabilidade de quem acessou determinada sala em certa data.
+
+
+
+
