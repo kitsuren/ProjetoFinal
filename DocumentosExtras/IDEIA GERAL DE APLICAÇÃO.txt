@@ -5,12 +5,13 @@ tipos de chave:
 - chave da academia (apenas adm/gerente)
 - chave das salas (instrutores)
 - chave armários (alunos)
+- chave cópia (depende de qual cópia)
 
 ambientes/salas:
 - academia (ambiente geral - apenas chave mestra e chave academia)
-- salas comunitárias (sala pesos / sala cardio)
-- salas exclusivas (sala aula1 / sala aula2)
-- armários (todos podem ter acesso)
+- salas comunitárias (sala pesos / sala cardio - adm + instrutores)
+- salas exclusivas (sala aula1 / sala aula2 - adm + instrutores)
+- armários (todos podem ter acesso - adm + instrutores + alunos)
 
 ---------
 
@@ -31,8 +32,8 @@ IDEIA SISTEMA:
 
 PRECISA TER:
 
-- HOME (APENAS ESTÉTICA - FILLER)
-- É MEMBRO DA NOSSA ACADEMIA? ACESSE SUA CONTA! (LOGIN - PÁGINA ESPECÍFICA)
+- HOME (APENAS ESTÉTICA - FILLER) OK
+- É MEMBRO DA NOSSA ACADEMIA? ACESSE SUA CONTA! (LOGIN - PÁGINA ESPECÍFICA) OK
 - DASHBOARD (DIFERENTE DEPENDENDO DE NÍVEL DE PERMISSÃO -> ADM, INSTRUTOR, ALUNO)
 - AULAS (CADASTRAR/LISTAR/SOLICITAR/MATRICULAR)
 - SALAS (CADASTRAR/LISTAR/SOLICITAR/RESERVAR/EMPRESTAR/DEVOLVER)
