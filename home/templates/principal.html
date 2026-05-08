@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+{% load static %}
+{% load django_bootstrap5 %}
+<html lang="pt-br" data-bs-theme="light">
+{% block head %}
+	{% include "head.html" %}
+{% endblock %}
+    <body>
+        <section class="section bg-success p-2 bg-opacity-75">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+                    <a class="navbar-brand" href="{% url 'index' %}">
+                        <img src="#" width="221" height="115">
+                    </a>
+					<div class="container-fluid">
+						<a class="navbar-brand" href="{%url 'index' %}">Início</a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+							data-bs-target="#navbarSupportedContent"
+							aria-controls="navbarSupportedContent" aria-expanded="false"
+							aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarAluno" role="button"
+										data-bs-toggle="dropdown" aria-expanded="false">
+										Alunos
+									</a>
+									<ul class="dropdown-menu">
+										<li><a class="dropdown-item" href="{% url 'aluno_adicionar' %}">Cadastrar Aluno</a></li>
+										<li><a class="dropdown-item" href="{% url 'alunos' %}">Listar Alunos</a></li>
+									</ul>
+								</li>
+                                <li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarInstrutor" role="button"
+										data-bs-toggle="dropdown" aria-expanded="false">
+										Instrutores
+									</a>
+									<ul class="dropdown-menu">
+										<li><a class="dropdown-item" href="#">Cadastrar Instrutor</a></li>
+										<li><a class="dropdown-item" href="#">Listar Instrutores</a></li>
+									</ul>
+								</li>
+                                <li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarChave" role="button"
+										data-bs-toggle="dropdown" aria-expanded="false">
+										Chaves
+									</a>
+									<ul class="dropdown-menu">
+										<li><a class="dropdown-item" href="#">Cadastrar Chave</a></li>
+										<li><a class="dropdown-item" href="#">Listar Chaves</a></li>
+									</ul>
+								</li>
+                                <li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarSala" role="button"
+										data-bs-toggle="dropdown" aria-expanded="false">
+										Ambientes
+									</a>
+									<ul class="dropdown-menu">
+										<li><a class="dropdown-item" href="#">Cadastrar Ambiente</a></li>
+										<li><a class="dropdown-item" href="#">Listar Ambientes</a></li>
+									</ul>
+                                </li>
+                                <li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarArmario" role="button"
+										data-bs-toggle="dropdown" aria-expanded="false">
+										Armários
+									</a>
+									<ul class="dropdown-menu">
+										<li><a class="dropdown-item" href="#">Cadastrar Armário</a></li>
+										<li><a class="dropdown-item" href="#">Listar Armários</a></li>
+									</ul>
+                                </li>
+                                <li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarReserva" role="button"
+										data-bs-toggle="dropdown" aria-expanded="false">
+										Reservas
+									</a>
+									<ul class="dropdown-menu">
+										<li><a class="dropdown-item" href="#">Cadastrar Reserva</a></li>
+										<li><a class="dropdown-item" href="#">Listar Reservas</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+            </div>
+        </section>
+
+
+	{% if messages %}
+		<div class="container-fluid p-3">
+			{% bootstrap_messages %}
+		</div>
+	{% endif %}
+
+	{% block content %} {% endblock %}
+
+	{% block footer %}
+		{% include "footer.html" %}
+	{% endblock %}
+    </body>
+</html>

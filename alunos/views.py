@@ -30,19 +30,19 @@ class AlunosView(ListView):
 class AlunoAddView(SuccessMessageMixin, CreateView):
     model = Aluno
     form_class = AlunoModelForm
-    template_name = 'aluno_form.html'
+    template_name = 'alunos_form.html'
     success_url = reverse_lazy('alunos')
     success_message = 'Aluno cadastrado com sucesso!'
 
 class AlunoUpdateView(SuccessMessageMixin, UpdateView):
     model = Aluno
     form_class = AlunoModelForm
-    template_name = 'aluno_form.html'
+    template_name = 'alunos_form.html'
     success_url = reverse_lazy('alunos')
     success_message = 'Aluno alterado com sucesso!'
 
 class AlunoDeleteView(SuccessMessageMixin, DeleteView):
     model = Aluno
-    template_name = 'aluno_apagar.html'
+    template_name = 'alunos_apagar.html'
     success_url = reverse_lazy('alunos')
     success_message = 'Aluno excluído com sucesso!'
